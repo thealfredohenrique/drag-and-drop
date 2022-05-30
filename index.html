@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag-and-drop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="view">
+      <div class="board">
+        <header class="board__header">
+          <h1 class="board__title">To do</h1>
+        </header>
+
+        <div class="board__draggable">
+          <div class="board__card" draggable="true">
+            <div class="board__tag red"></div>
+            <p class="board__content">Facere, repudiandae.</p>
+          </div>
+
+          <div class="board__card" draggable="true">
+            <div class="board__tag red"></div>
+            <p class="board__content">
+              Quam pariatur magni quaerat non eligendi animi.
+            </p>
+          </div>
+
+          <div class="board__card" draggable="true">
+            <div class="board__tag blue"></div>
+            <p class="board__content">
+              Nam natus sit harum quaerat quia provident, et sed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="board">
+        <header class="board__header">
+          <h1 class="board__title">In progress</h1>
+        </header>
+
+        <div class="board__draggable">
+          <div class="board__card" draggable="true">
+            <div class="board__tag green"></div>
+            <p class="board__content">
+              Eius exercitationem quasi quaerat laudantium veniam.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="board">
+        <header class="board__header">
+          <h1 class="board__title">Done</h1>
+        </header>
+
+        <div class="board__draggable">
+          <div class="board__card" draggable="true">
+            <div class="board__tag yellow"></div>
+            <p class="board__content">Quod natus impedit libero ex quo.</p>
+          </div>
+
+          <div class="board__card" draggable="true">
+            <div class="board__tag yellow"></div>
+            <p class="board__content">
+              Quas alias assumenda exercitationem sunt voluptatibus natus
+              inventore nobis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

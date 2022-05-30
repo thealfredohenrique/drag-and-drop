@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --glass-background: linear-gradient(
+    130deg,
+    rgba(251, 251, 254, 0.6),
+    rgba(251, 251, 254, 0.2)
+  );
+  --glass-box-shadow: inset 2px 2px 1px rgba(251, 251, 254, 0.3) inset -2px -2px
+    1px rgba(251, 251, 254, 0.2);
+  --glass-filter: blur(10px);
+  --card-background-glass: linear-gradient(
+    130deg,
+    rgba(251, 251, 254, 0.9),
+    rgba(251, 251, 254, 0.2)
+  );
+
+  --background-color: hsl(0, 0%, 80%);
+  --title-color: hsl(0, 0%, 10%);
+  --text-color: hsl(0, 0%, 10%);
+
+  --red-color: #f23d3d;
+  --green-color: #0bd472;
+  --blue-color: #04b2d9;
+  --yellow-color: #f2e744;
+
+  --font-family: "Poppins", sans-serif;
+
+  --border-radius: 0.5rem;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.view {
+  display: flex;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+.board {
+  background: var(--glass-background);
+  box-shadow: var(--glass-box-shadow);
+  backdrop-filter: var(--glass-filter);
+  border-radius: var(--border-radius);
+  height: 100%;
+  width: 20rem;
+}
+
+.board__header {
+  padding: 1rem;
+}
+
+.board__title {
+  color: var(--title-color);
+  font-size: 1rem;
+}
+
+.board__draggable {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+.board__card {
+  background: var(--card-background-glass);
+  border-radius: var(--border-radius);
+  cursor: grab;
+  height: 8rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.board__content {
+  font-size: 0.875rem;
+}
+
+.board__tag {
+  height: 4px;
+  width: 2rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.board__tag.red {
+  background-color: var(--red-color);
+}
+
+.board__tag.green {
+  background-color: var(--green-color);
+}
+
+.board__tag.blue {
+  background-color: var(--blue-color);
+}
+
+.board__tag.yellow {
+  background-color: var(--yellow-color);
+}
+
+.dragging {
+  cursor: grab;
+  opacity: 0.5;
+  border: 2px dashed var(--text-color);
+}
