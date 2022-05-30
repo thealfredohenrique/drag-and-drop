@@ -106,6 +106,14 @@ body {
   background-color: var(--yellow-color);
 }
 
+.board__content {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 .dragging {
   cursor: grab;
   opacity: 0.5;
